@@ -1,0 +1,166 @@
+{
+  "components": [
+    {
+      "text": "# Menú Amarradero Llanero",
+      "type": "text",
+      "layout": {
+        "row": "Row_042nrs3",
+        "columns": null
+      },
+      "id": "Field_0xq4o3k"
+    },
+    {
+      "text": "Área de Asadero",
+      "type": "text",
+      "layout": {
+        "row": "Row_0s9q9vp",
+        "columns": null
+      },
+      "id": "Field_0xqv371"
+    },
+    {
+      "values": [
+        {
+          "label": "Ternera a la Llanera",
+          "value": "terneraLlanera"
+        },
+        {
+          "label": "Cerdo a la Llanera",
+          "value": "cerdoLlanera"
+        },
+        {
+          "label": "Churrasco",
+          "value": "churrasco"
+        }
+      ],
+      "label": "Seleccione producto Asadero",
+      "type": "select",
+      "layout": {
+        "row": "Row_1ug52lm",
+        "columns": null
+      },
+      "id": "Field_0fckyin",
+      "key": "pedidoAsadero"
+    },
+    {
+      "label": "Unidades solicitadas Producto Asadero",
+      "type": "number",
+      "layout": {
+        "row": "Row_0e89g98",
+        "columns": null
+      },
+      "id": "Field_1eysmoc",
+      "key": "cantPedidoAsadero",
+      "defaultValue": 0,
+      "description": "Sujeto a disponibilidad",
+      "validate": {
+        "min": 0
+      }
+    },
+    {
+      "text": "Área de Cocina",
+      "type": "text",
+      "layout": {
+        "row": "Row_0c2kpup",
+        "columns": null
+      },
+      "id": "Field_0ufpfoc"
+    },
+    {
+      "values": [
+        {
+          "label": "Amarillo a la Monseñor",
+          "value": "amarilloMonseñor"
+        },
+        {
+          "label": "Mojarra Frita",
+          "value": "mojarraFrita"
+        },
+        {
+          "label": "Trucha al ajillo",
+          "value": "truchaAjillo"
+        }
+      ],
+      "label": "Seleccione producto Cocina",
+      "type": "select",
+      "layout": {
+        "row": "Row_0k29706",
+        "columns": null
+      },
+      "id": "Field_0c00n9e",
+      "key": "pedidoCocina"
+    },
+    {
+      "label": "Unidades solicitadas Producto Cocina",
+      "type": "number",
+      "layout": {
+        "row": "Row_0k890t1",
+        "columns": null
+      },
+      "id": "Field_0c762zl",
+      "key": "cantPedidoCocina",
+      "description": "Sujeto a disponibilidad",
+      "defaultValue": 0,
+      "validate": {
+        "min": 0
+      }
+    },
+    {
+      "text": "Área de Bar",
+      "type": "text",
+      "layout": {
+        "row": "Row_135tene",
+        "columns": null
+      },
+      "id": "Field_0h4qlae"
+    },
+    {
+      "values": [
+        {
+          "label": "Cerveza 330 ml",
+          "value": "cerveza330"
+        },
+        {
+          "label": "Gaseosa 350 ml",
+          "value": "gaseosa350"
+        },
+        {
+          "label": "Jugo de Fresa",
+          "value": "jugoFresa"
+        }
+      ],
+      "label": "Seleccione producto Bar",
+      "type": "select",
+      "layout": {
+        "row": "Row_0zl3sui",
+        "columns": null
+      },
+      "id": "Field_0jcw32e",
+      "key": "pedidoBar"
+    },
+    {
+      "label": "Unidades solicitadas Producto Bar",
+      "type": "number",
+      "layout": {
+        "row": "Row_1ykm8zq",
+        "columns": null
+      },
+      "id": "Field_1q3f251",
+      "key": "cantPedidoBar",
+      "description": "Sujeto a disponibilidad",
+      "validate": {
+        "min": 0
+      },
+      "defaultValue": 0
+    }
+  ],
+  "type": "default",
+  "id": "menuAsadero",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.10.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.19.0",
+  "schemaVersion": 8
+}

@@ -1,0 +1,22 @@
+{
+  "components": [
+    {
+      "text": "# No hay disponibilidad del producto\n",
+      "type": "text",
+      "layout": {
+        "row": "Row_0yl0ec6",
+        "columns": null
+      },
+      "id": "Field_1vdk5k2"
+    }
+  ],
+  "type": "default",
+  "id": "noDisponibilidad",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.10.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.19.0",
+  "schemaVersion": 8
+}

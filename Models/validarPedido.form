@@ -1,0 +1,126 @@
+{
+  "components": [
+    {
+      "text": "# Validación de Pedido",
+      "type": "text",
+      "layout": {
+        "row": "Row_02nj1xf",
+        "columns": null
+      },
+      "id": "Field_04c35k8"
+    },
+    {
+      "label": "Pedido de Asadero",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0xfqym8",
+        "columns": null
+      },
+      "id": "Field_10uxg0q",
+      "key": "pedidoAsadero",
+      "defaultValue": "pedidoAsadero",
+      "disabled": true
+    },
+    {
+      "label": "Cantidad de Pedido Asadero",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0uew8me",
+        "columns": null
+      },
+      "id": "Field_19dd5do",
+      "key": "cantPedidoAsadero",
+      "defaultValue": "cantPedidoAsadero",
+      "disabled": true
+    },
+    {
+      "label": "Pedido Cocina",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1h2ehg4",
+        "columns": null
+      },
+      "id": "Field_10fr4pq",
+      "key": "pedidoCocina",
+      "defaultValue": "pedidoCocina",
+      "disabled": true
+    },
+    {
+      "label": "Cantidad de Pedido Cocina",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0hfn77r",
+        "columns": null
+      },
+      "id": "Field_0geqfp4",
+      "key": "cantPedidoCocina",
+      "defaultValue": "cantPedidoCocina",
+      "disabled": true
+    },
+    {
+      "label": "Pedido Bar",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1ssav86",
+        "columns": null
+      },
+      "id": "Field_0zlpx17",
+      "key": "pedidoBar",
+      "disabled": true,
+      "defaultValue": "pedidoBar"
+    },
+    {
+      "label": "Cantidad de Pedido Bar",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1b5embr",
+        "columns": null
+      },
+      "id": "Field_0mjdm7u",
+      "key": "cantPedidoBar",
+      "defaultValue": "cantPedidoBar",
+      "disabled": true
+    },
+    {
+      "text": "¿Todo el pedido está disponible?",
+      "type": "text",
+      "layout": {
+        "row": "Row_0gejefe",
+        "columns": null
+      },
+      "id": "Field_0txbgqh"
+    },
+    {
+      "values": [
+        {
+          "label": "Sí",
+          "value": "true"
+        },
+        {
+          "label": "No",
+          "value": "false"
+        }
+      ],
+      "type": "select",
+      "layout": {
+        "row": "Row_1vvlz8o",
+        "columns": null
+      },
+      "id": "Field_0jbzmcq",
+      "key": "disponibilidad",
+      "defaultValue": "<none>",
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default",
+  "id": "validarPedido",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.10.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.19.0",
+  "schemaVersion": 8
+}
