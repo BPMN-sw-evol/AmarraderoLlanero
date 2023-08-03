@@ -1,27 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JHON ROJAS\\OneDrive\\Escritorio\\drive-download-20230731T183200Z-001\\MsgFoundation-Camunda-with-.Net-\\MsgFoundation.csproj": {}
+    "C:\\Users\\danil\\OneDrive\\Documentos\\MSGF-Amarradero-Llanero\\Amarradero-Llanero\\MsgFoundation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JHON ROJAS\\OneDrive\\Escritorio\\drive-download-20230731T183200Z-001\\MsgFoundation-Camunda-with-.Net-\\MsgFoundation.csproj": {
+    "C:\\Users\\danil\\OneDrive\\Documentos\\MSGF-Amarradero-Llanero\\Amarradero-Llanero\\MsgFoundation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JHON ROJAS\\OneDrive\\Escritorio\\drive-download-20230731T183200Z-001\\MsgFoundation-Camunda-with-.Net-\\MsgFoundation.csproj",
+        "projectUniqueName": "C:\\Users\\danil\\OneDrive\\Documentos\\MSGF-Amarradero-Llanero\\Amarradero-Llanero\\MsgFoundation.csproj",
         "projectName": "MsgFoundation",
-        "projectPath": "C:\\Users\\JHON ROJAS\\OneDrive\\Escritorio\\drive-download-20230731T183200Z-001\\MsgFoundation-Camunda-with-.Net-\\MsgFoundation.csproj",
-        "packagesPath": "C:\\Users\\JHON ROJAS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JHON ROJAS\\OneDrive\\Escritorio\\drive-download-20230731T183200Z-001\\MsgFoundation-Camunda-with-.Net-\\obj\\",
+        "projectPath": "C:\\Users\\danil\\OneDrive\\Documentos\\MSGF-Amarradero-Llanero\\Amarradero-Llanero\\MsgFoundation.csproj",
+        "packagesPath": "C:\\Users\\danil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\danil\\OneDrive\\Documentos\\MSGF-Amarradero-Llanero\\Amarradero-Llanero\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\JHON ROJAS\\OneDrive\\Escritorio\\drive-download-20230731T183200Z-001\\MsgFoundation-Camunda-with-.Net-\\NuGet.Config",
-          "C:\\Users\\JHON ROJAS\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\danil\\OneDrive\\Documentos\\MSGF-Amarradero-Llanero\\Amarradero-Llanero\\NuGet.Config",
+          "C:\\Users\\danil\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -78,6 +77,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.5, 7.0.5]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[7.0.5, 7.0.5]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.5, 7.0.5]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.5, 7.0.5]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -86,7 +103,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-preview.5.23303.2\\RuntimeIdentifierGraph.json"
         }
       }
     }
