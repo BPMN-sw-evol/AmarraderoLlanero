@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is the repository of the case laboratory "MSG Foundation" used for academic purposes. 
+This is the repository of the "MSG Foundation" case laboratory used for academic purposes. Here is the code needed to simulate the order taking process at the Amarradero Llanero. 
 
 ### What does this repository contain? 
 
