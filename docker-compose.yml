@@ -5,12 +5,24 @@ services:
     image: camunda/camunda-bpm-platform:run-latest
     ports:
       - "8080:8080"
+    networks:
+      - MSGF
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8080/engine-rest/engine"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
 
   msgfoundation:
     build:
-      context: C:\Users\danil\OneDrive\Documentos\BPMN-MSGF-AmarraderoLlanero
+      context: .
     ports:
       - "5152:5152"
     depends_on:
-      - camunda
-    command: ["sh", "-c", "chmod +x /wait-for-camunda.sh && /wait-for-camunda.sh camunda:8080 -t 0 -- echo 'Camunda is up! Starting msgfoundation...' && dotnet MsgFoundation.dll"]
+      camunda:
+        condition: service_healthy
+    networks:
+      - MSGF
+
+networks:
+  MSGF:
