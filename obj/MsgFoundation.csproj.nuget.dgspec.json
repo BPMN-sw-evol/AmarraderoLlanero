@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\danil\\OneDrive\\Documentos\\MSGF-Amarradero-Llanero\\Amarradero-Llanero\\MsgFoundation.csproj": {}
+    "C:\\Users\\danil\\OneDrive\\Documentos\\BPMN-MSGF-AmarraderoLlanero\\MsgFoundation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\danil\\OneDrive\\Documentos\\MSGF-Amarradero-Llanero\\Amarradero-Llanero\\MsgFoundation.csproj": {
+    "C:\\Users\\danil\\OneDrive\\Documentos\\BPMN-MSGF-AmarraderoLlanero\\MsgFoundation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\danil\\OneDrive\\Documentos\\MSGF-Amarradero-Llanero\\Amarradero-Llanero\\MsgFoundation.csproj",
+        "projectUniqueName": "C:\\Users\\danil\\OneDrive\\Documentos\\BPMN-MSGF-AmarraderoLlanero\\MsgFoundation.csproj",
         "projectName": "MsgFoundation",
-        "projectPath": "C:\\Users\\danil\\OneDrive\\Documentos\\MSGF-Amarradero-Llanero\\Amarradero-Llanero\\MsgFoundation.csproj",
+        "projectPath": "C:\\Users\\danil\\OneDrive\\Documentos\\BPMN-MSGF-AmarraderoLlanero\\MsgFoundation.csproj",
         "packagesPath": "C:\\Users\\danil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\danil\\OneDrive\\Documentos\\MSGF-Amarradero-Llanero\\Amarradero-Llanero\\obj\\",
+        "outputPath": "C:\\Users\\danil\\OneDrive\\Documentos\\BPMN-MSGF-AmarraderoLlanero\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\danil\\OneDrive\\Documentos\\MSGF-Amarradero-Llanero\\Amarradero-Llanero\\NuGet.Config",
+          "C:\\Users\\danil\\OneDrive\\Documentos\\BPMN-MSGF-AmarraderoLlanero\\NuGet.Config",
           "C:\\Users\\danil\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [

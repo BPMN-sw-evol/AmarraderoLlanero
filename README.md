@@ -28,7 +28,7 @@ Go to the [PostgeSQL download page](https://www.enterprisedb.com/downloads/postg
 
 Install all the features. Necessary to include the Builder. 
 
-Please use "root" as the password. 
+Please use "postgres" as the password. 
 
 ### 2. Using locally this repository.
 

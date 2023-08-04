@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  camunda:
+    image: camunda/camunda-bpm-platform:run-latest
+    ports:
+      - "8080:8080"
+
+  msgfoundation:
+    build:
+      context: C:\Users\danil\OneDrive\Documentos\BPMN-MSGF-AmarraderoLlanero
+    ports:
+      - "5152:5152"
+    depends_on:
+      - camunda
+    command: ["sh", "-c", "chmod +x /wait-for-camunda.sh && /wait-for-camunda.sh camunda:8080 -t 0 -- echo 'Camunda is up! Starting msgfoundation...' && dotnet MsgFoundation.dll"]
