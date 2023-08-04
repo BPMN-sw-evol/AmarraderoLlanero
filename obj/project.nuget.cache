@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "36+FhQXN+dwa32XqMc+LmmfHo31xRrgYkHhmhDb1ITIStPdp4j8gPeqSA51hEBa6/Ir25fi3xCmViNc6dEsg6Q==",
+  "dgSpecHash": "VeXcYnLbBC9rTRv2tXKE06bjbssrqVidhsyLF86+Orpuf+5dGXMl0gF/Lc5h3bExt3I2AhzLj1g1AvuzGNADsw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\danil\\OneDrive\\Documentos\\BPMN-MSGF-AmarraderoLlanero\\MsgFoundation.csproj",
+  "projectFilePath": "C:\\Users\\danil\\OneDrive\\Documentos\\AmarraderoLlanero\\MsgFoundation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\danil\\.nuget\\packages\\camunda.api.client\\2.6.0\\camunda.api.client.2.6.0.nupkg.sha512",
     "C:\\Users\\danil\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

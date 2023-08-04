@@ -27,7 +27,7 @@ app.MapGet("/dbconexion", async ([FromServices] MsgFoundationContext dbcontext) 
     return Results.Ok("Base de datos creada Crack");
 });
 
-CamundaClient camunda = CamundaClient.Create("http://localhost:8080/engine-rest");
+CamundaClient camunda = CamundaClient.Create("http://camunda:8080/engine-rest");
 //ejecutar cada 5 segundos
 
 var timer = new System.Timers.Timer(TimeSpan.FromSeconds(2)); // se ejecutara cada 2 segundos

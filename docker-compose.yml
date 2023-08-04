@@ -2,6 +2,7 @@ version: "3.9"
 
 services:
   camunda:
+    container_name: camunda
     image: camunda/camunda-bpm-platform:run-latest
     ports:
       - "8080:8080"
@@ -14,10 +15,11 @@ services:
       retries: 5
 
   msgfoundation:
+    container_name: msgfoundation
     build:
       context: .
     ports:
-      - "5152:5152"
+      - "80:80"
     depends_on:
       camunda:
         condition: service_healthy
