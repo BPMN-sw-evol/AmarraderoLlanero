@@ -30,7 +30,7 @@ app.MapGet("/dbconexion", async ([FromServices] MsgFoundationContext dbcontext) 
 CamundaClient camunda = CamundaClient.Create("http://camunda:8080/engine-rest");
 //ejecutar cada 5 segundos
 
-var timer = new System.Timers.Timer(TimeSpan.FromSeconds(2)); // se ejecutara cada 2 segundos
+var timer = new System.Timers.Timer(TimeSpan.FromSeconds(10)); // se ejecutara cada 2 segundos
 timer.Elapsed += async (sender, e) =>
 {
 
@@ -60,28 +60,5 @@ timer.Elapsed += async (sender, e) =>
 
 };
 timer.Start(); // indicamos que unicie
-
-
-
-
-
-
-
-
-
-//// Configure the HTTP request pipeline.
-//if (app.Environment.IsDevelopment())
-//{
-//    app.UseSwagger();
-//    app.UseSwaggerUI();
-//}
-
-//app.UseHttpsRedirection();
-
-
-
-//app.UseAuthorization();
-
-//app.MapControllers();
 
 app.Run();

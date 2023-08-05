@@ -6,13 +6,15 @@ services:
     image: camunda/camunda-bpm-platform:run-latest
     ports:
       - "8080:8080"
-    networks:
-      - MSGF
     healthcheck:
       test: ["CMD-SHELL", "curl -f http://localhost:8080/engine-rest/engine"]
       interval: 30s
       timeout: 10s
       retries: 5
+    depends_on:
+      - db
+    networks:
+      - MSGF
 
   msgfoundation:
     container_name: msgfoundation
@@ -23,6 +25,14 @@ services:
     depends_on:
       camunda:
         condition: service_healthy
+    networks:
+      - MSGF
+
+  db:
+    container_name: database
+    image: postgres:latest
+    env_file:
+      - .env  # Cargar las variables de entorno desde el archivo .env
     networks:
       - MSGF
 
