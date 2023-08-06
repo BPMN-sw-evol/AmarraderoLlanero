@@ -26,5 +26,21 @@ services:
     networks:
       - MSGF
 
+  db:
+    container_name: database
+    image: postgres:latest
+    # env_file:
+    #   - .env  # Cargar las variables de entorno desde el archivo .env
+    environment:
+      POSTGRES_SERVER: ${DATABASE_SERVER}
+      POSTGRES_HOST: ${DATABASE_PORT}
+      POSTGRES_DB: ${DATABASE_DB}
+      POSTGRES_USER: ${DATABASE_USER}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+    ports:
+      - "5432:5432"
+    networks:
+      - MSGF
+
 networks:
   MSGF:
