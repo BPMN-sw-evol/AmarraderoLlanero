@@ -14,10 +14,10 @@ services:
     depends_on:
       - db
     networks:
-      - MSGF
+      - AMARRADERO
 
-  msgfoundation:
-    container_name: msgfoundation
+  amarraderollanero:
+    container_name: amarraderollanero
     build:
       context: .
     ports:
@@ -26,7 +26,7 @@ services:
       camunda:
         condition: service_healthy
     networks:
-      - MSGF
+      - AMARRADERO
 
   db:
     container_name: database
@@ -42,7 +42,8 @@ services:
     ports:
       - "5432:5432"
     networks:
-      - MSGF
+      - AMARRADERO
 
 networks:
-  MSGF:
+  AMARRADERO:
+    driver: bridge

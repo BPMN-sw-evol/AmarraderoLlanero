@@ -6,16 +6,16 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
 COPY ["Nuget.config", "."]
-COPY ["MsgFoundation.csproj", "."]
-RUN dotnet restore "./MsgFoundation.csproj"
+COPY ["AmarraderoLlanero.csproj", "."]
+RUN dotnet restore "./AmarraderoLlanero.csproj"
 COPY . .
 WORKDIR "/src/."
-RUN dotnet build "MsgFoundation.csproj" -c Release -o /app/build
+RUN dotnet build "AmarraderoLlanero.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "MsgFoundation.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "AmarraderoLlanero.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "MsgFoundation.dll"]
+ENTRYPOINT ["dotnet", "AmarraderoLlanero.dll"]
