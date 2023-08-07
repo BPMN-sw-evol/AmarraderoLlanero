@@ -1,15 +1,15 @@
-﻿using Camunda.Api.Client;
-using MsgFoundation.Data;
-using MsgFoundation.Models;
+using Camunda.Api.Client;
+using AmarraderoLlanero.Data;
+using AmarraderoLlanero.Models;
 using Camunda.Api.Client.ExternalTask;
 using Camunda.Api.Client.ProcessInstance;
 
-namespace MsgFoundation.Functions
+namespace AmarraderoLlanero.Functions
 {
     public class UserFunctions
     {
         //funcion crear usuario
-        public static async Task CreateUser(ExternalTaskInfo task, MsgFoundationContext dbcontext, CamundaClient camunda)
+        public static async Task CreateUser(ExternalTaskInfo task, AmarraderoLlaneroContext dbcontext, CamundaClient camunda)
         {
 
             Dictionary<string, VariableValue> variables = await camunda.Executions[task.ExecutionId].LocalVariables.GetAll();
@@ -50,7 +50,7 @@ namespace MsgFoundation.Functions
 
         }
 
-        public static async Task ValidateCredentials(ExternalTaskInfo task, MsgFoundationContext dbcontext, CamundaClient camunda)
+        public static async Task ValidateCredentials(ExternalTaskInfo task, AmarraderoLlaneroContext dbcontext, CamundaClient camunda)
         {
 
             Dictionary<string, VariableValue> variables = await camunda.Executions[task.ExecutionId].LocalVariables.GetAll();

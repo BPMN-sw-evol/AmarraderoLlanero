@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {
+    "net8.0": {
       "Camunda.Api.Client/2.6.0": {
         "type": "package",
         "dependencies": {
@@ -4593,7 +4593,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net7.0": [
+    "net8.0": [
       "Camunda.Api.Client >= 2.6.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.2",
@@ -4608,25 +4608,25 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\danil\\OneDrive\\Documentos\\AmarraderoLlanero\\MsgFoundation.csproj",
-      "projectName": "MsgFoundation",
-      "projectPath": "C:\\Users\\danil\\OneDrive\\Documentos\\AmarraderoLlanero\\MsgFoundation.csproj",
+      "projectUniqueName": "C:\\Users\\danil\\Downloads\\AmarraderoLlanero\\AmarraderoLlanero.csproj",
+      "projectName": "AmarraderoLlanero",
+      "projectPath": "C:\\Users\\danil\\Downloads\\AmarraderoLlanero\\AmarraderoLlanero.csproj",
       "packagesPath": "C:\\Users\\danil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\danil\\OneDrive\\Documentos\\AmarraderoLlanero\\obj\\",
+      "outputPath": "C:\\Users\\danil\\Downloads\\AmarraderoLlanero\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\danil\\OneDrive\\Documentos\\AmarraderoLlanero\\NuGet.Config",
+        "C:\\Users\\danil\\Downloads\\AmarraderoLlanero\\NuGet.Config",
         "C:\\Users\\danil\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net7.0"
+        "net8.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {}
         }
       },
@@ -4637,8 +4637,8 @@
       }
     },
     "frameworks": {
-      "net7.0": {
-        "targetAlias": "net7.0",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "dependencies": {
           "Camunda.Api.Client": {
             "target": "Package",
@@ -4678,24 +4678,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[7.0.5, 7.0.5]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[7.0.5, 7.0.5]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[7.0.5, 7.0.5]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[7.0.5, 7.0.5]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"

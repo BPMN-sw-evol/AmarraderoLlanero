@@ -2,14 +2,14 @@ using Camunda.Api.Client;
 using Camunda.Api.Client.ExternalTask;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using MsgFoundation.Data;
-using MsgFoundation.Models;
-using MsgFoundation.Functions;
+using AmarraderoLlanero.Data;
+using AmarraderoLlanero.Models;
+using AmarraderoLlanero.Functions;
 
 var builder = WebApplication.CreateBuilder(args);
 
 //Postgres Database Conection
-builder.Services.AddNpgsql<MsgFoundationContext>(builder.Configuration.GetConnectionString("PostgreSQLConnection"));
+builder.Services.AddNpgsql<AmarraderoLlaneroContext>(builder.Configuration.GetConnectionString("PostgreSQLConnection"));
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -21,7 +21,7 @@ var app = builder.Build();
 
 app.MapGet("/", () => Console.Write("Hello World!"));
 
-app.MapGet("/dbconexion", async ([FromServices] MsgFoundationContext dbcontext) =>
+app.MapGet("/dbconexion", async ([FromServices] AmarraderoLlaneroContext dbcontext) =>
 {
     dbcontext.Database.EnsureCreated();
     return Results.Ok("Base de datos creada Crack");
@@ -35,7 +35,7 @@ timer.Elapsed += async (sender, e) =>
 {
 
     List<ExternalTaskInfo> allTask = await camunda.ExternalTasks.Query().List();
-    MsgFoundationContext dbcontext = new MsgFoundationContext(builder.Services.BuildServiceProvider().GetService<DbContextOptions<MsgFoundationContext>>());
+    AmarraderoLlaneroContext dbcontext = new AmarraderoLlaneroContext(builder.Services.BuildServiceProvider().GetService<DbContextOptions<AmarraderoLlaneroContext>>());
 
     foreach (ExternalTaskInfo task in allTask)
     {

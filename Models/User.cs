@@ -1,6 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 
-namespace MsgFoundation.Models
+namespace AmarraderoLlanero.Models
 {
     public class User
     {

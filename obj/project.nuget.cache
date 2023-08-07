@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VeXcYnLbBC9rTRv2tXKE06bjbssrqVidhsyLF86+Orpuf+5dGXMl0gF/Lc5h3bExt3I2AhzLj1g1AvuzGNADsw==",
+  "dgSpecHash": "UiQyKVqSJtdq+YkilldLdaS8oUsQ0xXrG/LpDVuH6Qxt21ULu85zrKxnF1QGK18kA17xw8RwepGbCHdXu51R9Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\danil\\OneDrive\\Documentos\\AmarraderoLlanero\\MsgFoundation.csproj",
+  "projectFilePath": "C:\\Users\\danil\\Downloads\\AmarraderoLlanero\\AmarraderoLlanero.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\danil\\.nuget\\packages\\camunda.api.client\\2.6.0\\camunda.api.client.2.6.0.nupkg.sha512",
     "C:\\Users\\danil\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
@@ -84,11 +84,7 @@
     "C:\\Users\\danil\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\danil\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
     "C:\\Users\\danil\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
-    "C:\\Users\\danil\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
-    "C:\\Users\\danil\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.5\\microsoft.netcore.app.ref.7.0.5.nupkg.sha512",
-    "C:\\Users\\danil\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.5\\microsoft.windowsdesktop.app.ref.7.0.5.nupkg.sha512",
-    "C:\\Users\\danil\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.5\\microsoft.aspnetcore.app.ref.7.0.5.nupkg.sha512",
-    "C:\\Users\\danil\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.5\\microsoft.netcore.app.host.win-x64.7.0.5.nupkg.sha512"
+    "C:\\Users\\danil\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }
