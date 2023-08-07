@@ -1,47 +1,78 @@
-# MSG Foundation - Amarradero Llanero
+#  Amarradero Llanero
 
-## Introduction
+Amarradero Llanero focuses on integrating Camunda, a business process automation platform, with a .NET Core application. The integration allows for the management of workflow and tasks in Camunda while connecting to a PostgreSQL database for storing and retrieving relevant information.
 
-This is the repository of the "MSG Foundation" case laboratory used for academic purposes. Here is the code needed to simulate the order taking process at the Amarradero Llanero. 
+## Index
 
-### What does this repository contain? 
+1. [Description](#description)
+2. [Prerequisites](#prerequisites)
+3. [Usage](#usage)
+4. [Development Summary](#development-summary)
 
-This repository contains the source, in .NET of several functions required to be used for the execution of the MSG Foundation laboratory case. This lab case is used for working with Camunda Platform 7 (a BPM Engine) in business process execution.  
+## Description
 
-The code published here is for being used locally on a pc. 
+The Camunda and .NET Core integration is crucial for enhancing automation and efficiency in business processes. **Amarradero Llanero** is built upon Docker containers to ensure portability and scalability of the application. A PostgreSQL database is used to store relevant data, and processes and tasks are configured in Camunda to coordinate activities.
 
-## ¿How to use this code? 
+## Prerequisites
+Before running the program, ensure that you have the following prerequisites installed:
 
-Using this repository involves: 
+1. **Code editor**: if you want to modify the program you must have, we recommend using Visual Studio Code (VS Code). You can download it from the [official website](https://code.visualstudio.com/download).
+2. **Version control system**: Install GIT from the [official website](https://git-scm.com/downloads).
+3. **Clone the repository**: Use the following command to clone the repository: `git clone https://github.com/BPMN-sw-evol/AmarraderoLlanero.git`.
+4. **Docker Desktop**: Install Docker from the [official website](https://www.docker.com/products/docker-desktop/)
+5. **WSL2**: Use the following command to install WSL2  
+    ````
+    wsl --install
+    wsl --set-default-version 2
+    ````
+    To download a specific distribution, we use `wsl --list --online` to list the available distributions, then use `wsl --install -d "distribution-version"`.
 
-1. Installing a [PostgreSQL](https://www.postgresql.org/) instance, with PgAdmin. 
-2. Cloning this repository. 
-3. Running the Camunda Engine. 
-4. Deploying this repo on .NET (it requires the previous item)
-5. (Only once) Creating the MSG Foundation database. 
 
-## Detailed step-by-step. 
+## Usage
 
-### 1. Installing a [PostgreSQL](https://www.postgresql.org/) instance, with PgAdmin. 
+To execute the program:
 
-Go to the [PostgeSQL download page](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) and use your appropriate operating system package. 
+1. Create and save an .env file in the root of the project with the following structure:
 
-Install all the features. Necessary to include the Builder. 
+    ````json
+    DATABASE_SERVER=db
+    DATABASE_PORT=5432
+    DATABASE_DB=AmarraderoLlanero
+    DATABASE_USER=postgres
+    DATABASE_PASSWORD=admin
+    ````
 
-Please use "postgres" as the password. 
+2. Execute the following command, in a command console located in the root of the project, to build the images and raise the containers: `docker-compose up`.
+If you want to know if the images have been built correctly, run:  `docker images`.
 
-### 2. Using locally this repository.
+3. In the browser, enter the following address to create the database: `localhost/dbconexion`.
+If you want to enter to check the database, run: `docker exec -it database psql -U postgres`.
 
-Go to the [GitHub](https://github.com/RogerRoldan/MsgFoundation-Camunda-with-.Net-) repository and clone or download this repo. Remember to go to the Code button to obtain the link for Git Clone.  
+4. In the camunda platform, we deploy the **AmarraderoLlanero** model including **the other files located** in the **BPMN-Models** folder of the project.
 
-### 3. Running the Camunda Engine. 
+5. In the browser, enter the following address to enter the database engine and start an instance of the BPM model: `http://localhost:8080/camunda-welcome/index.html`
+if you want to enter to check the user records in the database, run: 
+    ````sql
+    \c AmarraderoLlanero
+    SELECT * FROM "Users";
+    ````
+    if you want to check the order records in the database, run:
+    ````sql
+    \c AmarraderoLlanero
+    SELECT * FROM "Orders";
+    ````
 
-Go to your local folder of the Camunda Engine and execute the start.bat file. 
+## Development Summary
 
-### 4. Deploying this repo on .NET (it requires the previous item)
+The project focuses on creating a restaurant order management application using Docker, ASP.NET Core, Camunda BPM, and PostgreSQL. The application allows users to register, place orders from different areas of the restaurant, and automates workflow processes. User and order information is stored in the PostgreSQL database.
 
-Open the folder of the repo with Visual Studio Code, open a Terminal (Terminal -> New Terminal), and execute dotNet run 
+The database store the following attributes for each instance of BPM model:
+**Table Users**
+| Id     | Username        | Fullname       | Email           | Password     |
+| ------------- | --------------------|-----------------------|--------------------|--------------- |
+|Unique identifier| User's username | Full name | Email address | Password |
 
-### 5. (Only once) Creating de MSG Foundation database. 
-
-Copy the link where the .NET project was deployed (in my case http://localhost:5152) and on the internet browser add the string "/dbconexion" and press ENTER. 
+**Table Orders**
+| Id     | CurrentDate        | PedidoAsadero       | CantPedidoAsadero           | PedidoCocina     | CantPedidoCocina | pedidoBar| cantPedidoBar |
+| ------------- | ---------|-----------|-----------|------------|------------|--------|--------------- |
+|Unique identifier for each record.| The date when the order was placed. | The order from the grill section. | The quantity of the grill order. | The order from the kitchen section. | The quantity of the kitchen order. |  The order from the bar section.  |  The quantity of the bar order. |
