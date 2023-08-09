@@ -28,9 +28,8 @@ app.MapGet("/dbconexion", async ([FromServices] AmarraderoLlaneroContext dbconte
 });
 
 CamundaClient camunda = CamundaClient.Create("http://camunda:8080/engine-rest");
-//ejecutar cada 5 segundos
 
-var timer = new System.Timers.Timer(TimeSpan.FromSeconds(10)); // se ejecutara cada 2 segundos
+var timer = new System.Timers.Timer(TimeSpan.FromSeconds(4)); // se ejecutara cada 2 segundos
 timer.Elapsed += async (sender, e) =>
 {
 
