@@ -16,7 +16,7 @@ The Camunda and .NET Core integration is crucial for enhancing automation and ef
 ## Prerequisites
 Before running the program, ensure that you have the following prerequisites installed:
 
-1. **Code editor**: if you want to modify the program you must have, we recommend using Visual Studio Code (VS Code). You can download it from the [official website](https://code.visualstudio.com/download).
+1. **Code editor**: if you want to modify the program you must have[JCHV1], we recommend using Visual Studio Code (VS Code). You can download it from the [official website](https://code.visualstudio.com/download).
 2. **Version control system**: Install GIT from the [official website](https://git-scm.com/downloads).
 3. **Clone the repository**: Use the following command to clone the repository: `git clone https://github.com/BPMN-sw-evol/AmarraderoLlanero.git`.
 4. **Docker Desktop**: Install Docker from the [official website](https://www.docker.com/products/docker-desktop/)
@@ -27,16 +27,17 @@ Before running the program, ensure that you have the following prerequisites ins
     ````
     To download a specific distribution, we use `wsl --list --online` to list the available distributions, then use `wsl --install -d "distribution-version"`.
 
-
 ## Usage
 
 To execute the program:
 
-1. Create and save an .env file in the root of the project with the following structure:
+1. Create and save an .env file in the root of the project [JCHV2]with the following structure:
 
-    ````json
+    ````json 
+
+
     DATABASE_SERVER=db
-    DATABASE_PORT=5432
+    DATABASE_PORT=5432[JCHV3]
     DATABASE_DB=AmarraderoLlanero
     DATABASE_USER=postgres
     DATABASE_PASSWORD=admin
@@ -76,3 +77,6 @@ The database store the following attributes for each instance of BPM model:
 | Id     | CurrentDate        | PedidoAsadero       | CantPedidoAsadero           | PedidoCocina     | CantPedidoCocina | pedidoBar| cantPedidoBar |
 | ------------- | ---------|-----------|-----------|------------|------------|--------|--------------- |
 |Unique identifier for each record.| The date when the order was placed. | The order from the grill section. | The quantity of the grill order. | The order from the kitchen section. | The quantity of the kitchen order. |  The order from the bar section.  |  The quantity of the bar order. |
+[JCHV1]¿se refieren al programa de .NET? (program.cs?) ...Revisar la forma de decirlo. 
+[JCHV2](the cloned folder)
+[JCHV3]Agregar que éstos no se pueden modificar por xxxxx
