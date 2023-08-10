@@ -74,12 +74,28 @@ To execute the program:
     ````url
     http://localhost/dbconexion
     ````
+    **Interacting with PostgreSQL from the console or the command prompt**
     - If you want validate the database was correctly created, run:  `docker exec -it database psql -U postgres`.
     ![Resultado esperado](images/Postgres.png)
     - Once you have logged in to PostgreSQL, if you want to connect to the created database, using SQL run: `\c AmarraderoLlanero`.
     ![Resultado esperado](images/ConnectDatabase.png)
     - Once you have connected to the database, if you want to list the existing tables, you can use SQL to execute `\d`.
     ![Resultado esperado](images/tablasDB.png)
+
+    **Interacting with PostgreSQL from pgAdmin4**
+    - create a new server in pgAdmin
+        ![Resultado esperado](images/createServer.png)
+    - Assign a name to the server that is being created, then in the "connection" section enter the following parameters:
+        ````txt
+        Host name / address: 127.0.0.1 / localhost
+        Port: 9999
+        Maintenance database: postgres
+        Username: postgres
+        Password: admin
+        ````
+        ![Resultado esperado](images/createdServer.png)
+        ***remember to use these parameters if you have not modified the parameters of the .env file.***
+    - With the parameters entered correctly, we hit the "save" button and wait for the database instance to be created in pgAdmin4.
 
 4. For this point, it is required to use the **CAMUNDA modeler** and open the BPM model **"AmarraderoLlanero"** from the folder **"BPMN-Models"** located in the previously cloned folder.
 Then, we deploy the "AmarraderoLlanero" model and include **all the remaining files from the "BPMN-Models" folder**.
@@ -89,13 +105,22 @@ At this point you can:
     - Start a BPM model instance
     - Interact with it
     - Review the Users records in the database. For this you can:
+        **If you are using console or command prompt**
         ````sql
         SELECT * FROM "Users";
         ````
         ![Resultado esperado](images/tablaUsers.png)
+        **If you are using pgAdmin4**
+        ![Resultado esperado](images/tablaUserspgAdmin.png)
+
+
 
     - Review the Orders records in the database. For this you can:
+        **If you are using console or command prompt**
         ````sql
         SELECT * FROM "Orders";
         ````
         ![Resultado esperado](images/tablaOrders.png)
+        **If you are using pgAdmin4**
+        ![Resultado esperado](images/tablaOrderspgAdmin.png)
+
