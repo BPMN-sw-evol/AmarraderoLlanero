@@ -115,26 +115,31 @@ To execute the program:
     Then, we deploy the "AmarraderoLlanero" model and include **all the remaining files from the "BPMN-Models" folder**.
 
 5.  Once the "AmarraderoLlanero" model is displayed, type the address in an Internet browser: `http://localhost:8080/camunda-welcome/index.html`
-    At this point you can: - Start a BPM model instance - Interact with it - Review the Users records in the database. For this you can:
-    **If you are using console or command prompt**
-    `sql
-        SELECT * FROM "Users";
-        `
-    ![Resultado esperado](images/tablaUsers.png)
+    At this point you can: 
+    
+    - Start a BPM model instance 
+    - Interact with it 
+    - Review the Users records in the database. For this you can:
+    
+        **If you are using console or command prompt**
+        
+        `sql
+            SELECT * FROM "Users";
+            `
 
-            **If you are using pgAdmin4**
+        ![Resultado esperado](images/tablaUsers.png)
 
-            ![Resultado esperado](images/tablaUserspgAdmin.png)
+        **If you are using pgAdmin4**
 
+        ![Resultado esperado](images/tablaUserspgAdmin.png)
 
+     - Review the Orders records in the database. For this you can:
+     **If you are using console or command prompt**
+         ````sql
+         SELECT * FROM "Orders";
+         ````
+         ![Resultado esperado](images/tablaOrders.png)
 
-        - Review the Orders records in the database. For this you can:
-            **If you are using console or command prompt**
-            ````sql
-            SELECT * FROM "Orders";
-            ````
-            ![Resultado esperado](images/tablaOrders.png)
+        **If you are using pgAdmin4**
 
-            **If you are using pgAdmin4**
-
-            ![Resultado esperado](images/tablaOrderspgAdmin.png)
+        ![Resultado esperado](images/tablaOrderspgAdmin.png)
