@@ -84,11 +84,11 @@ To execute the program:
 4. For this point, it is required to use the **CAMUNDA modeler** and open the BPM model **"AmarraderoLlanero"** from the folder **"BPMN-Models"** located in the previously cloned folder.
 Then, we deploy the "AmarraderoLlanero" model and include **all the remaining files from the "BPMN-Models" folder**.
 
-![Resultado esperado](images/camunda-modeler.png)
-
-When deploying the model with its required files you will see something like this:
-
-![Resultado esperado](images/process-deployed.png)
+    ![Resultado esperado](images/camunda-modeler.png)
+    
+    When deploying the model with its required files you will see something like this:
+    
+    ![Resultado esperado](images/process-deployed.png)
 
 5. Once the "AmarraderoLlanero" model appears, type the address in an Internet browser: `http://localhost:8080/camunda-welcome/index.html`, it will take you to a login where the **user and password is demo**.
 At this point you can: 
