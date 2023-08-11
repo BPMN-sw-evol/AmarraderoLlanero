@@ -123,10 +123,9 @@ To execute the program:
     
         **If you are using console or command prompt**
         
-        `sql
-            SELECT * FROM "Users";
-            `
-
+         ````sql
+         SELECT * FROM "Users";
+         ````
         ![Resultado esperado](images/tablaUsers.png)
 
         **If you are using pgAdmin4**
@@ -134,7 +133,8 @@ To execute the program:
         ![Resultado esperado](images/tablaUserspgAdmin.png)
 
      - Review the Orders records in the database. For this you can:
-     **If you are using console or command prompt**
+        **If you are using console or command prompt**
+       
          ````sql
          SELECT * FROM "Orders";
          ````
