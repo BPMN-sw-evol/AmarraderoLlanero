@@ -75,10 +75,15 @@ To execute the program:
     http://localhost/dbconexion
     ````
     - If you want validate the database was correctly created, run:  `docker exec -it database psql -U postgres`.
+    
     ![Resultado esperado](images/Postgres.png)
+
     - Once you have logged in to PostgreSQL, if you want to connect to the created database, using SQL run: `\c AmarraderoLlanero`.
+    
     ![Resultado esperado](images/ConnectDatabase.png)
+
     - Once you have connected to the database, if you want to list the existing tables, you can use SQL to execute `\d`.
+
     ![Resultado esperado](images/tablasDB.png)
 
 4. For this point, it is required to use the **CAMUNDA modeler** and open the BPM model **"AmarraderoLlanero"** from the folder **"BPMN-Models"** located in the previously cloned folder.
