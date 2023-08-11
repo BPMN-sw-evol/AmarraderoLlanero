@@ -1,6 +1,6 @@
 #  Amarradero Llanero
 
-Amarradero Llanero focuses on integrating Camunda, a business process automation platform, with a .NET Core application. The integration allows for the management of workflow and tasks in Camunda while connecting to a PostgreSQL database for storing and retrieving relevant information.
+This repository integrates Camunda, a business process automation platform, with a .NET Core application and a PostgreSQL database instance using Docker virtualization technology for a restaurante called Amarradero Llanero.
 
 ## Index
 
@@ -84,9 +84,19 @@ To execute the program:
 4. For this point, it is required to use the **CAMUNDA modeler** and open the BPM model **"AmarraderoLlanero"** from the folder **"BPMN-Models"** located in the previously cloned folder.
 Then, we deploy the "AmarraderoLlanero" model and include **all the remaining files from the "BPMN-Models" folder**.
 
-5. Once the "AmarraderoLlanero" model is displayed, type the address in an Internet browser: `http://localhost:8080/camunda-welcome/index.html`
+![Resultado esperado](images/camunda-modeler.png)
+
+When deploying the model with its required files you will see something like this:
+
+![Resultado esperado](images/process-deployed.png)
+
+5. Once the "AmarraderoLlanero" model appears, type the address in an Internet browser: `http://localhost:8080/camunda-welcome/index.html`, it will take you to a login where the **user and password is demo**.
 At this point you can: 
-    - Start a BPM model instance
+    - Start a BPM model instance: in Camunda Tasklist clic on start process
+    ![Resultado esperado](images/start-process.png)
+    Clic on "Amarradero Llanero" and then clic on start.
+    ![Resultado esperado](images/process-started.png)
+    The instance has been started! 
     - Interact with it
     - Review the Users records in the database. For this you can:
         ````sql
