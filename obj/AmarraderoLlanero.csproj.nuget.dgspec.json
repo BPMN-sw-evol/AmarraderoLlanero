@@ -44,10 +44,6 @@
               "target": "Package",
               "version": "[2.6.0, )"
             },
-            "DotNetEnv": {
-              "target": "Package",
-              "version": "[2.5.0, )"
-            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.0, )"
@@ -66,10 +62,6 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
-            "Microsoft.Extensions.Configuration.EnvironmentVariables": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[7.0.1, )"
@@ -77,10 +69,6 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
-            },
-            "dotenv.net": {
-              "target": "Package",
-              "version": "[3.1.2, )"
             }
           },
           "imports": [
