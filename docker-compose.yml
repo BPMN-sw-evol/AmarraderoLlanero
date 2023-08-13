@@ -5,7 +5,7 @@ services:
     container_name: camunda
     image: camunda/camunda-bpm-platform:run-latest
     ports:
-      - "90:8080"
+      - "80:8080"
     healthcheck:
       test: ["CMD-SHELL", "curl -f http://localhost:8080/engine-rest/engine"]
       interval: 30s
@@ -21,7 +21,7 @@ services:
     build:
       context: .
     ports:
-      - "80:80"
+      - "90:80"
     depends_on:
       camunda:
         condition: service_healthy
