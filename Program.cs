@@ -19,7 +19,7 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-app.MapGet("/prueba", () => Console.Write("Hello World!"));
+app.MapGet("/", () => Console.Write("Hello World!"));
 
 app.MapGet("/dbconexion", async ([FromServices] AmarraderoLlaneroContext dbcontext) =>
 {
